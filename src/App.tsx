@@ -1,20 +1,5 @@
-import DataTable from './components/DataTable';
-import IMAGE from './react.png'
-import LOGO from './React.svg'
+import react from 'react';
 
-function App() {
-
-  return (
-    <div>
-      <h1>
-        <img src={IMAGE} alt="React Logo" width="30" height="30" />
-          Webpack, Material UI, Typicode, Typescript
-        <img src={LOGO} alt="React Logo" width="30" />
-        <p>{process.env.NODE_ENV}</p>
-      </h1>
-      <DataTable />
-    </div>
-  )
+export const App = () => {
+    return <h1>React Typescript Webpack</h1>
 }
-
-export default App
