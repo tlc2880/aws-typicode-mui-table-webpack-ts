@@ -1,5 +1,12 @@
-import react from 'react';
+import DataTable from './components/DataTable';
 
-export const App = () => {
-    return <h1>React Typescript Webpack</h1>
+function App() {
+
+  return (
+    <div>
+      <DataTable />
+    </div>
+  )
 }
+
+export default App
