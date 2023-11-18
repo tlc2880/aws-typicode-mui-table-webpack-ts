@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline, Container } from '@mui/material'
 import DataTable from './components/DataTable';
 import IMAGE from './react.png'
 import LOGO from './React.svg'
-import './styles.css';
+import './styles.scss';
+import { ClickCounter } from './ClickCounter'
 
 const darkTheme = createTheme({
   palette: {
@@ -23,6 +24,7 @@ function App() {
             <img src={LOGO} alt="React Logo" width="30" />
             <p>{process.env.NODE_ENV}</p>
           </h1>
+        <ClickCounter />
         <DataTable />      
       </Container>
     </ThemeProvider>
